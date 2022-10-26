@@ -1,0 +1,17 @@
+.experience{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-letra);
+}
+
+.experience__section__title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.experience__box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 2rem;
+}
