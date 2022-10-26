@@ -1,0 +1,22 @@
+.academic{
+    background-color: var(--color-medio);
+    display: flex;
+    flex-direction: column;
+    color: var(--color-letra);
+}
+
+.academic__title{
+    text-align: center;
+    color: var(--color-letra);
+    font-size: 1.5rem;
+}
+
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.academic__courses__list{
+    padding: 1rem;
+}

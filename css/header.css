@@ -1,0 +1,34 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  color: var(--color-letra);
+}
+
+.menu__header {
+  display: flex;
+}
+
+.menu__header img {
+  height: 1.5rem;
+  margin: 1rem 0.5rem;
+}
+
+.menu__header h3 {
+  font-size: 1rem;
+  margin-top: 1.3rem;
+}
+
+.menu nav ul {
+  margin-top: 1.3rem;
+}
+
+.menu nav ul li a {
+  display: none;
+}
+
+.menu li a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--color-letra);
+}

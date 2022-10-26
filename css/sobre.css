@@ -1,0 +1,8 @@
+.about{
+    background-color: var(--color-medio);
+}
+
+.about__container{
+    padding: .1rem 1rem 1rem;
+    color: var(--color-letra);
+}
