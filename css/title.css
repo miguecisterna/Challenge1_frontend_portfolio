@@ -9,7 +9,7 @@
 .title__profile{
     height: 150px;
     width: 150px;
-    background: url(/assets/perfil.png) no-repeat center / cover;
+    background: url(../assets/perfil.png) no-repeat center / cover;
     border-radius: 100%;
     border: 5px solid var(--color-claro);
 }
