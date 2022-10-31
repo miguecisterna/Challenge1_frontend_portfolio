@@ -1,17 +1,17 @@
 :root{
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
-   --color-oscuro:#686B2B;
-   --color-claro: #EAEEA7;
-   --color-fondo: #E5EB5F;
-   --color-letra: #696B4B;
-   --color-medio: #B2B849;
+   --color-oscuro:#A325F8;
+   --color-claro: #5C21D9;
+   --color-fondo: #3A2FF0;
+   --color-letra: #2148D9;
+   --color-medio: #258AF8;
 
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--color-fondo) ;
+    background-color: var(--cor-de-link);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
@@ -22,9 +22,19 @@ ol, ul,li {
 }
 a{
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--color-claro);
+    font-family: Monospace;
 }
 
+.skills__title, .hobbies__title, .academic__title{
+    margin-top: 2rem;
+}
+
+@media only screen and (min-width: 992px){
+    .skills__title, .hobbies__title, .academic__title{
+        margin: 5rem;
+    }
+}
 /*Tablet*/
 @media (min-width: 768px) {
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Referencia de la hoja de estilo de Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/css/base.css">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="/css/experiencia.css">
     <link rel="stylesheet" href="/css/contacto.css">
     <link rel="stylesheet" href="/css/footer.css">
+
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Mi Portafolio</title>
@@ -26,17 +28,15 @@
     <div class="todo">
         <section class="menu">
             <header class="menu__header">
-                <img src="assets\vector.png">
-                <h3 class="menu__title">Migue Cisterna</h3>
+                <h3 class="menu__title">Bienvenido a mi Portfolio!</h3>
             </header>
-            <nav>
+            <nav class="menu__nav">
                 <ul class="menu__list">
                     <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
                     <li class="menu__list__item"><a href="#skills">Skills</a></li>
                     <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
                     <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                     <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
                 </ul>
                 <li class="menu__list__item__contacto"><a href="#contacto">miguecisterna@gmail.com</a></li>
             </nav>
@@ -47,13 +47,13 @@
             <div class="title__div">
                 <div class="title__profile"></div>
                 <div class="title__container">
-                    <h2 class="title__bio">Hola, mi nombre es Miguel y soy desarrollador Web y  de Videojuegos.</h2>
-                    <h3 class="title__subsection">Vengo del mundo del arte, con un gran enfoque en la estetica, y hace un par de años descubrí la programación y me encantó. Actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
+                    <h2 class="title__bio">Miguel Angel Cisterna</h2>
+                    <h3 class="title__subsection">Desarrollador Front-end / Desarrollador Independiente de Videojuegos</h3>
                     <ul class="title__network">
                         <!-- Pon los enlaces de tus redes sociales favoritas -->
-                        <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
-                        <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="">Currículo <img src="assets\arrow.png"></a></li>
+                        <li class="title__network__item"><a href="https://github.com/miguecisterna" target="_blank">Github <img src="assets\arrow.png"> </a></li>
+                        <li class="title__network__item"><a href="https://www.linkedin.com/in/miguel-angel-cisterna-a847461b6/" target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
+                        <li class="title__network__item"><a href="">Curriculum <img src="assets\arrow.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -63,60 +63,88 @@
         <section class="about" id="sobre-mi">
             <div class="about__container">
                 <h3 class="about__title">Sobre mi</h3>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+                <p class="about__paragraph">¡Hola! mi nombre es Miguel, soy una persona Proactiva, siempre aprendiendo cosas nuevas y aplicándolas a lo que amo, que es la programación. Tengo experiencia como artista, por lo que los trabajos creativos son algo que disfruto y son fáciles para mí.
+                <br>
+                <br>
+                He estado aprendiendo tecnologías como HTML CSS y Javascript durante los últimos dos años, también participando en el desarrollo de juegos, usando Unity y C# como lenguaje de programación para hacer mis propios videojuegos.
+                <br> 
+                <br>
+                Busco oportunidades en el área de IT, que permitan mi crecimiento intelectual y continuar desarrollando mis conocimientos técnicos, para crecer junto a mis compañeros.
+                <br> 
+                Me agrada trabajar en equipo, cooperando con todos y ayudando de la mejor manera posible, con gran satisfacción en enseñar y aprender.</p>
                 <!-- Si quieres, pon tú firma acá! -->
-                <img src="assets\signature.png">
+                <img class="firma" src="assets/firma.png">
             </div>
         </section>
 
         <!-- Sección de Skills -->
         <section class="skills" id="skills">
             <h3 class="skills__title">Skills</h3>
-                <div class="skills__line">
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"><img src="assets\htlm.png"></li>
-                            <li class="skills__name"> HTML 5</li>
-                        </ul>
-                    </div>
+            <div class="skills__line">
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img class="skills__logo" src="assets/html-5.png"></li>
+                        <li class="skills__name"> HTML 5</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img class="skills__logo" src="assets/css-3.png" alt=""></li>
+                        <li class="skills__name">CSS</li>
+                    </ul>
+                </div>
 
                     <div class="skills__box">
                         <ul>
-                            <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
+                            <li class="skills__img"><img class="skills__logo" src="assets/js.png" alt=""></li>
                             <li class="skills__name">Javascript</li>
                         </ul>
                     </div>
 
                     <div class="skills__box">
                         <ul>
-                            <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
-                            <li class="skills__name">PHP</li>
+                            <li class="skills__img"><img class="skills__logo" src="assets/bootstrap.png" alt=""></li>
+                            <li class="skills__name">Bootstrap</li>
                         </ul>
                     </div>
 
                     <div class="skills__box">
                         <ul>
-                            <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                            <li class="skills__name">Node JS</li>
+                            <li class="skills__img"><img class="skills__logo" src="assets/java.png" alt=""> </li>
+                            <li class="skills__name">Java</li>
                         </ul>
                     </div>
 
                     <div class="skills__box">
                         <ul>
-                            <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                            <li class="skills__name">React</li>
+                            <li class="skills__img"><img class="skills__logo" src="assets/mysql (1).png" alt=""> </li>
+                            <li class="skills__name">MySQL</li>
                         </ul>
                     </div>
 
                     <div class="skills__box">
                         <ul>
-                            <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                            <li class="skills__name">CSS</li>
+                            <li class="skills__img"><img class="skills__logo" src="assets/unity.png" alt=""> </li>
+                            <li class="skills__name">Unity</li>
                         </ul>
                     </div>
-            </div>
-        </section>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"><img class="skills__logo" src="assets/c-sharp.png" alt=""> </li>
+                            <li class="skills__name">C#</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills__box">
+                        <ul>
+                            <li class="skills__img"><img class="skills__logo" src="assets/photoshop.png" alt=""> </li>
+                            <li class="skills__name">Photoshop</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
         <!-- Sección de Hobbies -->
         <section class="hobbies" id="hobbies">
@@ -124,15 +152,15 @@
                 <div class="hobbies__line">
                     <div class="hobbies__box">
                         <ul>
-                            <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                            <li class="hobbies__name"> Patinaje</li>
+                            <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
+                            <li class="hobbies__name">Tocar bajo</li>
                         </ul>
                     </div>
 
                     <div class="hobbies__box">
                         <ul>
-                            <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                            <li class="hobbies__name">Tocar bajo</li>
+                            <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
+                            <li class="hobbies__name">Cocinar</li>
                         </ul>
                     </div>
 
@@ -152,8 +180,8 @@
 
                     <div class="hobbies__box">
                         <ul>
-                            <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                            <li class="hobbies__name">Cocinar</li>
+                            <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
+                            <li class="hobbies__name"> Patinaje</li>
                         </ul>
                     </div>
 
@@ -173,25 +201,25 @@
                 <div class="academic__courses__box">
                     <ul class="academic__courses__list">
                         <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
-                        <li class="academic__courses__item__title"><h4>Análisis de datos</h4></li>
-                        <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
+                        <li class="academic__courses__item__img"><img src="assets/UNLP.png"></li>
+                        <li class="academic__courses__item__title"><h4>Lic. en Musica Popular</h4></li>
+                        <li class="academic__courses__item__subtitle"><p>2014 - UNLP</p></li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img"><img class="argprog" src="assets/arg-programa.png"></li>
+                        <li class="academic__courses__item__title"><h4>Formación Full-Stack</h4></li>
+                        <li class="academic__courses__item__subtitle"><p>2020 - Argentina Programa</p></li>
                     </ul>
                 </div>
                 <div class="academic__courses__box">
                     <ul class="academic__courses__list">
                         <!--Pon el logotipo de la institución de formación -->
                         <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                        <li class="academic__courses__item__title"><h4>Formación en UX Design</h4></li>
-                        <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
-                        <li class="academic__courses__item__title"><h4>Posgrado en diseño</h4></li>
-                        <li class="academic__courses__item__subtitle"><p>En curso - UFRJ</p></li>
+                        <li class="academic__courses__item__title"><h4>Formación en Desarrollo Web</h4></li>
+                        <li class="academic__courses__item__subtitle"><p>En Curso - Alura</p></li>
                     </ul>
                 </div>
             </div>
@@ -200,58 +228,170 @@
         <!-- Sección de Experiencia Profesional/Proyectos-->
         <section class="experience" id="xp">
             <h2 class="experience__section__title" >Experiencia / Proyectos</h2>
+            <h2 class="experience__section__subtitle">Web:</h2>
             <div class="experience__box">
+                <h2 class="experience__title">Keep it Secret - Encriptador de mensajes</h2>
+
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\decod_print.png">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/assets/Encriptador.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Encriptador</h5>
+                          <p>En esta pagina podremos sentirnos unos verdaderos espias <br>
+                             y codificar cualquier mensaje que querramos.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/Encriptador2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Encriptador</h5>
+                          <p>Tomamos el texto que queremos codificar  y presinoamos el botón "Encriptar"</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/Encriptador3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Encriptador</h5>
+                          <p>Voilá! Tenemos nuestro texto ya encriptado. <br>
+                             Podemos copiarlo con el botón "Copiar" para pegarlo donde deseemos.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/Encriptador4.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Encriptador</h5>
+                          <p>Podemos tomar cualquier texto encriptado (por este mismo encriptador 😅) <br>
+                             y desencriptarlo en el mismo espacio donde encriptamos el texto, pero esta vez <br>
+                             clickeando en el boton "Desencriptar"</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/Encriptador5.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Encriptador</h5>
+                          <p>Mensaje desencriptado! 😎</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">Encriptador de texto</h2>
                     <h3 class="experience__text">Challenge Alura Codificador </h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/miguecisterna/Challenge1_Encriptador" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://miguecisterna.github.io/Challenge1_Encriptador/" target="_blank"><button class="experience__botao--demo">Página</button></a></span>
                         </div>
                 </div>
             </div>  
 
             <div class="experience__box">
+                <h2 class="experience__title">Juego del Ahorcado</h2>
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\forca_print.png">
+                <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/assets/Ahorcado1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Menú principal</h5>
+                          <p>Iniciar juego o Agregar una nueva palabra.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/Ahorcado2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Nueva Palabra</h5>
+                          <p>Si elegimos la opción de agrregar una nueva palabra <br>
+                             podemos agregar una nueva palabra a la lista ya existente de tematica Medieval</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/Ahorcado3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Pantalla de Juego</h5>
+                          <p>Aquí podemos jugar al clasico juego del ahorcado con tematica "Medieval Pixel"</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/Ahorcado4.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Pantalla de Juego</h5>
+                          <p>Contamos con un contador de racha, que enumerará cada palabra acertada <br>
+                             y con un contador de "Letras Erradas"</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/Ahorcado5.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block textoCarousel">
+                          <h5>Pantalla de "Game Over"</h5>
+                          <p>Pantalla de Fin de Juego, revelando la palabra secreta, <br>
+                             dando la opcion de volver a Jugar.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                 <div class="experience__info">
-                    <h2 class="experience__title">Juego creado con HTML y JavaScript</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
+                    <h3 class="experience__text">Realizado con HTML, CSS y Javascript - Challenge Oracle </h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/miguecisterna/Challenge2_ahorcado" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://miguecisterna.github.io/Challenge2_ahorcado/" target="_blank"><button class="experience__botao--demo">Página</button></a></span>
                         </div>
                 </div>
-            </div>  
+            </div> 
+            
+            <h2 class="experience__section__subtitle">Juegos:</h2>
 
             <div class="experience__box">
+                <h2 class="experience__title">Pixol's Planetoids</h2>
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\secretcode_print.png">
+                <video class="experience__box__video" src="/assets/planetoids_video.mp4" controls></video>
                 <div class="experience__info-container">
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                        </div>
+                    
+                    <h3 class="experience__text">Juego cuya mecanica principal es impedir que los planetas colisionen entre ellos. <br><br>
+                    Desarrollo pensado para dispositivos moviles.<br>
+                    Desarrollo totalmente independiente utilizando Unity como motor, C# como lenguaje de programación Photoshop para diseños de Sprites y Ableton Live 9 para la musica.</h3>
                 </div>
             </div>  
 
             <div class="experience__box">
-                <img class="experience__img" src="assets\forca2_print.png">
+                <h2 class="experience__title">Calaverita (1-bit Platformer) <br>
+                                             [EN DESARROLLO]</h2>
+                <img class="experience__img" src="assets/1 bit cave.png">
                 <div class="experience__info-container">
-                <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                        </div>
+                    <h3 class="experience__text">Juego estilo "Metroidvania" de estetica 1-bit actualmente en desarrollo. <br><br> Utilizando Unity como motor, C# como lenguaje de programación Photoshop para diseños de Sprites y Ableton Live 9 para la musica.</h3>
+
             </div>
             </div>  
         </section>
@@ -286,6 +426,8 @@
          </section>
 
     </div>
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
  <!-- Script del documento JavaScript -->
 <script src="validacion.js"></script>
 </body>

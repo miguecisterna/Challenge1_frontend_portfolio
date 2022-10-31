@@ -1,4 +1,5 @@
 .academic{
+    margin: 5rem 0;
     background-color: var(--color-medio);
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@
 .academic__title{
     text-align: center;
     color: var(--color-letra);
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 .academic__courses{
@@ -18,5 +19,27 @@
 }
 
 .academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
+}
+
+.academic__courses__item__title{
+    margin-top: 1rem;
+}
+
+.academic__courses__item__img img{
+    height: 7rem;
+}
+
+.argprog{
+    height: 5rem!important;
+}
+
+@media (min-width: 768px){
+    .academic__courses__box{
+        width: 25vw;
+        margin: 1rem;
+    }
 }

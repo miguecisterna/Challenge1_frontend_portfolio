@@ -4,6 +4,10 @@
     color: var(--color-letra);
 }
 
+.experience__section__subtitle{
+    margin: 1rem 0 1rem 40vw;
+}
+
 .experience__section__title{
     text-align: center;
     font-size: 1.5rem;
@@ -13,5 +17,76 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-medio);
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.textoCarousel {
+    font-family: Monospace;
+    font-weight: bolder;
+    color: black;
+    opacity: 90%;
+    text-shadow: 4px 4px 9px rgb(0 0 0 / 91%);
+    background: rgba(0, 0, 0, .08);
+}
+
+.experience__repo a button, .experience__demo a button{
+    background-color: var(--color-claro);
+    border: none;
+    border-radius: 30px;
+    font-family: inherit;
+    margin: 1rem;
+    padding: .7rem 2rem;
+}
+
+.experience__title{
+    text-shadow: 4px 4px 17px rgba(12, 4, 20, 0.91);
+}
+
+.experience__text{
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.experience__box__video{
+    max-height: 80vh;
+}
+
+.experience__img{
+    max-width: 80vw;
+}
+
+@media only screen and (min-width: 768px){
+    .experience__box__video {
+        max-height: 30vh;
+    }
+
+    .experience__section__subtitle{
+        margin: 1rem 0 1rem 5vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #carouselExampleCaptions , #carouselExampleCaptions2{
+        width: 70vw;
+    }
+
+    .experience__box__video {
+        max-height: 50vh;
+        margin-top: 2rem;
+    }
+
+    .experience__box{
+        margin: 2rem 5vw;
+    }
+
+    .experience__section__title{
+        font-size: 3rem;
+    }
+
+    .experience__section__subtitle{
+        margin: 1rem 0 1rem 5vw;
+    }
 }

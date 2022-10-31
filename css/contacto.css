@@ -17,7 +17,6 @@
 .formcontato__form{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
 }
 
 .formcontato__form input{
@@ -43,4 +42,25 @@
     box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.3);
     -webkit-box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.3);
     -moz-box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.3);
+}
+
+@media only screen and (min-width: 992px){
+    .formcontato{
+        margin-top: 5rem;
+        justify-content: flex-end;
+    }
+
+    .formcontato__esquerda{
+        display: block;
+        margin-right: 7vw;
+    }
+
+    .formcontato__img{
+        height: 75vh;
+    }
+
+    .formcontato__contacto{
+        display: flex;
+    }
+
 }

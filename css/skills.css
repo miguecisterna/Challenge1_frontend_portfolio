@@ -3,6 +3,11 @@
     flex-direction: column;
 }
 
+.skills__logo{
+    height: 4rem;
+    margin: 2rem;
+}
+
 .skills__title{
     text-align: center;
     color: var(--color-letra);
@@ -12,10 +17,33 @@
 .skills__line{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills__box{
     background-color: var(--color-claro);
     margin: 1rem;
     width: 40vw;
+}
+
+.skills__name{
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px){
+    .skills__box{
+        width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .skills__box{
+        width: 18vw
+    }
+
+    .skills__title{
+        font-size: 3rem;
+    }
 }

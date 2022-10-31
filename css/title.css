@@ -2,11 +2,16 @@
     margin: 1rem;
 }
 
+.title__bio{
+    margin-top: 1rem;
+}
+
 .title__profile{
     height: 150px;
     width: 150px;
     background: url(/assets/perfil.png) no-repeat center / cover;
     border-radius: 100%;
+    border: 5px solid var(--color-claro);
 }
 
 .title__container{
@@ -21,4 +26,67 @@
     display: flex;
     justify-content: space-around;
     padding: 0;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px){
+    .title{
+        margin: 1rem 1rem 4rem;
+    }
+    .title__div{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .title__container{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20vw;
+        margin-top: 2.5rem;
+    }
+
+    .title__profile {
+        height: 21vh;
+        width: 32vh;
+        margin-top: 1rem;
+        margin-right: 3rem;
+        border: 5px solid var(--color-claro);
+    }
+
+    .title__network{
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .menu__nav{
+        display: flex;
+    }
+
+    .menu nav ul li a {
+        display: block;
+    }
+
+    .menu__list{
+        display: flex;
+        justify-content: space-around;
+        width: 50vw;
+    }
+
+    .menu__list__item__contacto{
+        padding-top: 1.2rem;
+    }
+
+    .title__profile{
+        height: 35vh;
+        width: 35vh;
+        margin-top: 2rem;
+        margin-right: 5rem;
+        border: 10px solid var(--color-claro);
+    }
+
+    .title__container{
+        padding-top: 3rem;
+        margin-right: 25vw;
+    }
 }

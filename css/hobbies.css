@@ -12,10 +12,37 @@
 .hobbies__line{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hobbies__box{
     background-color: var(--color-claro);
     margin: 1rem;
     width: 40vw;
+}
+
+.hobbies__img img{
+    margin: 3rem;
+}
+
+.hobbies__name{
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px){
+    .hobbies__box{
+        width: 25vw;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .hobbies__box{
+        width: 18vw
+    }
+
+    .hobbies__title{
+        font-size: 3rem;
+    }
 }
