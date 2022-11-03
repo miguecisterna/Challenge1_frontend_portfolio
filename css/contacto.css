@@ -9,6 +9,10 @@
     display: none;
 }
 
+.formcontato__contacto{
+    width: 80vw;
+}
+
 .formcontato__text{
     display: flex;
     flex-direction: column;
